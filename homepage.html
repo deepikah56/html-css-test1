@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopping Kart</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="shortcut icon" href="images/logo.png">
+<link rel="stylesheet" href="/home/qwinix/Documents/html-css test-1/homepage.css">
+</head>
+<body>
+
+  <div class="navigation-bar">
+    <div id="navigation-container">
+		<img src="images/logo.png"  alt="logo" style="height: -webkit-fill-available;">
+        <ul>
+        <li><a href="web.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+</div>
+<div>
+		<img class="mySlides" src="images/2.jpg" style="height:500px;width:-webkit-fill-available;">
+		<img class="mySlides" src="images/1.png" style="height:500px;width:-webkit-fill-available;">
+		<img class="mySlides" src="images/3.jpg" style="height:500px;width:-webkit-fill-available;">
+</div>		
+      <div id="text" >
+		<img src="images/im1.png"  align="right" alt="logo" style="height: 100px;width:200px;margin-left:30px;"><p style="text-align:justify;font-size:20px;">BigCommerce’s mobile cart conversion is up to 3x higher than the industry average because we offer responsive designs and the latest mobile selling features. Our one-page checkout reduces friction and lets shoppers buy using PayPal, Apple Pay and other mobile payment solutions on your ecommerce store. In fact, accepting PayPal can improve checkout conversion by up to 44%.Your ecommerce website is search engine optimization friendly out of the box, enabling you to increase organic traffic and spend your marketing dollars elsewhere. Integrations with email providers, Google Shopping and other marketing channels help you reach more shoppers with less effort — and engage the 30% of online shoppers who buy weekly.Our Enterprise plans come equipped with dedicated account managers, giving you access to custom business advice and priority support. Their outstanding service has helped us earn a 99% retention rate for customers they assist.Our highly customizable platform lets you create the perfect shopping experience more easily and quickly than any other website builder. Build a store with code-free updates, or work with a developer to customize any aspect of your website’s design and shopping cart. Professional developers prefer BigCommerce because we let you use common languages and test your website design before publishing. </p>
+	  </div>
+<div class="footer">
+<h6 style="text-align:center;
+font-size:16px;padding:15px;">copyright@ibotta.com</h6>
+</div>
+	<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
